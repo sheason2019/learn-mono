@@ -1,0 +1,81 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.link {
+  color: #fff;
+}
+
+.header {
+  background-color: #673ab8;
+  color: white;
+  text-align: center;
+  padding: .5rem 0;
+  position: fixed;
+  height: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.header-space {
+  height: 3rem;
+}
+
+.list {
+  flex-grow: 1;
+  background-color: white;
+}
+.tip {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  line-height: 64px;
+  padding-top: 16px;
+  background-color: lightgray;
+}
+.container {
+  position: relative;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: 400ms linear 0ms infinite running slidein;
+  animation-name: rotate;
+}
+

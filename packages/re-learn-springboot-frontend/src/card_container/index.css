@@ -1,0 +1,27 @@
+.root {
+  width: 28rem;
+  height: 20rem;
+  background-color: white;
+  box-shadow: 0 0 2px 1px black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: lightgray;
+  transition: 800ms;
+}
+
+form {
+  position: relative;
+  width: 28rem;
+  height: 20rem;
+}
+
+h1 {
+  position: absolute;
+  transform: translateY(-13rem);
+}
+
+h2 {
+  user-select: none;
+}
