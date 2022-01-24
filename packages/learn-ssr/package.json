@@ -1,4 +1,5 @@
 {
+  "name": "learn-ssr",
   "scripts": {
     "start": "node dist/server.js",
     "build:server": "npx webpack --config webpack.config.js",
