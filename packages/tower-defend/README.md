@@ -15,11 +15,17 @@ Electron本身没有开箱即用的热重载功能，因此在这个项目里使
 使用下列命令启动调试模式：
 
 ```
-$ yarn dev:vite
-$ yarn dev:electron
+$ yarn dev
 ```
 
 然后就可以像调试普通的Vite应用一样对Electron应用进行调试了。
+
+如果需要在调试过程中显示更详细的日志信息，请使用下面两条语句分别启动两项服务进行调试。
+
+```
+$ yarn dev:vite
+$ yarn dev:electron
+```
 
 # 打包
 
