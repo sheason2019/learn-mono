@@ -1,3 +1,5 @@
 'use strict';
 import Canvas from './canvas';
-export { Canvas };
+import Layer from './layer';
+import Shape from './shape';
+export { Canvas, Layer, Shape, };

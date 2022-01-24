@@ -3,13 +3,15 @@ import { size, setSize } from "../common/size";
 
 const Canvas: Component = (props) => {
   createEffect(() => {
-    setSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
+    setTimeout(() => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }, 0);
   }, []);
   return (
-    <div style={{ width: size().width, height: size().height }}>
+    <div style={{ width: `${size().width}px`, height: `${size().height}px` }}>
       {props.children}
     </div>
   );
