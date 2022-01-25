@@ -1,7 +1,7 @@
 {
   "name": "learn-cpp",
   "scripts": {
-    "dev": "node utils/cpp-runner.js --build",
-    "start": "node utils/cpp-runner.js"
+    "dev": "./utils/cpp-runner.sh --build",
+    "start": "./utils/cpp-runner.sh"
   }
 }
