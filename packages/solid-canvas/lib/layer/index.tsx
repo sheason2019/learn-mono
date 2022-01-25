@@ -1,11 +1,10 @@
-import {
-  Component,
-  createEffect,
-  onCleanup,
-} from "solid-js";
+import { Component, createEffect, onCleanup } from "solid-js";
 import { size } from "../common/size";
 import { CanvasContext, clearCtx, registCtx } from "../common/context";
-import { DataSourceType, createDataSourceProxy } from "../common/data-source-proxy";
+import {
+  DataSourceType,
+  createDataSourceProxy,
+} from "../common/data-source-proxy";
 
 interface Props {
   dataSourceRef?: DataSourceType;
@@ -14,6 +13,7 @@ const Layer: Component<Props> = ({ children, dataSourceRef }) => {
   let canvas: HTMLCanvasElement | undefined;
   const layerId = Symbol("layerId");
 
+  // 获取ctx实例
   createEffect(() => {
     if (!canvas) return;
     const ctx = canvas.getContext("2d")!;
