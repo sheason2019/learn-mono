@@ -2,6 +2,7 @@
   "name": "learn-cpp",
   "scripts": {
     "dev": "./utils/cpp-runner.sh --build",
-    "start": "./utils/cpp-runner.sh"
+    "start": "./utils/cpp-runner.sh",
+    "touch": "./utils/touch.sh"
   }
 }

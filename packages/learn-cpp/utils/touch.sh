@@ -1,0 +1,1 @@
+cp src/template.cpp src/$1.cpp
