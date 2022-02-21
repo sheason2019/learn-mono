@@ -8,5 +8,6 @@
     "istream": "cpp",
     "cstring": "cpp",
     "string": "cpp"
-  }
+  },
+  "java.format.settings.url": ".vscode/java-formatter.xml"
 }
